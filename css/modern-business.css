@@ -1,0 +1,102 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/templates/modern-business)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+  background-image: url(https://images.hdqwalls.com/wallpapers/dark-black-sand-texture-8k-p8.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.hero-image {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 50vh;
+  /* min-height: 300px; */
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.hero-text-left {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text-right {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-header {
+  text-align: center; 
+  background-color: #636568; 
+  color: whitesmoke;
+}
+
+.card-body {
+  background-color: #9ea3ab; 
+  color: whitesmoke;
+}
+
+.card-footer {
+  background-color: #636568; 
+  color: whitesmoke;
+}
+
+.card-footer a {
+  background-color: rgb(204, 173, 0); 
+  color: whitesmoke; 
+  border: 1px solid whitesmoke;
+}
+
+.hero-text a:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.card-text {
+  text-align: justify;
+}
