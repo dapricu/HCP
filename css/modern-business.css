@@ -11,10 +11,6 @@ body {
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-/* .p {
-  font-weight: normal !important;
-} */
-
 .portfolio-item {
   margin-bottom: 30px;
 }
@@ -76,6 +72,16 @@ body {
 
 .card-header {
   text-align: center; 
+  background-color: #636568; 
+  color: whitesmoke;
+}
+
+.card-header2 {
+  font-family: Tinos, serif;
+  font-size: 2.25rem;
+  letter-spacing: -1.1px;
+  font-weight: 400 !important;
+  text-align: center;
   background-color: #636568; 
   color: whitesmoke;
 }
@@ -180,4 +186,22 @@ html {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 150%;
+}
+
+.text-headline {
+  text-align: center;
+  font-size: 20.5px;
+  width: 90%;
+  margin: auto;
+  color: whitesmoke;
+} 
+
+.container-fluid {
+  width: 100%;
+  border: 5px solid #636568a6;
+  background-color: #636568;
+  padding: 20px;  
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center!important;
 }
