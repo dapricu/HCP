@@ -6,9 +6,12 @@
 body {
   padding-top: 56px;
   background-image: url(https://images.hdqwalls.com/wallpapers/dark-black-sand-texture-8k-p8.jpg);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
   color: whitesmoke !important;
 }
 
@@ -49,7 +52,7 @@ body {
   color: white;
 }
 
-.hero-text button {
+/* .hero-text button {
   border: none;
   outline: 0;
   display: inline-block;
@@ -63,7 +66,7 @@ body {
 .hero-text button:hover {
   background-color: #555;
   color: white;
-}
+} */
 
 .center {
   display: block;
@@ -72,8 +75,8 @@ body {
 }
 
 .card-header {
-  text-align: center; 
-  background-color: #636568; 
+  text-align: center;
+  background-color: #636568;
   color: whitesmoke;
 }
 
@@ -83,23 +86,23 @@ body {
   letter-spacing: -1.1px;
   font-weight: 400 !important;
   text-align: center;
-  background-color: #636568; 
+  background-color: #636568;
   color: whitesmoke;
 }
 
 .card-body {
-  background-color: #9ea3ab; 
+  background-color: #9ea3ab;
   color: whitesmoke;
 }
 
 .card-footer {
-  background-color: #636568; 
+  background-color: #636568;
   color: whitesmoke;
 }
 
 .card-footer a {
-  background-color: rgb(204, 173, 0); 
-  color: whitesmoke; 
+  background-color: rgb(204, 173, 0);
+  color: whitesmoke;
   border: 1px solid whitesmoke;
 }
 
@@ -116,7 +119,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -133,7 +138,7 @@ html {
   padding-top: 50px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1000px) {
   .column {
     width: 100%;
     display: block;
@@ -142,7 +147,7 @@ html {
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #9ea3ab3f; 
+  background-color: #9ea3ab3f;
   color: whitesmoke;
 }
 
@@ -150,7 +155,8 @@ html {
   padding: 0 16px;
 }
 
-.container::after, .row::after {
+.container::after,
+.row::after {
   content: "";
   clear: both;
   display: table;
@@ -174,19 +180,21 @@ html {
 
 .player-name {
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .user {
   background-color: #636568a6;
   width: 100%;
-  padding: 20px;
+  padding: 3vh;
   text-align: center;
   color: rgb(241, 205, 0);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 150%;
+  font-size: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .text-headline {
@@ -195,28 +203,32 @@ html {
   width: 90%;
   margin: auto;
   color: whitesmoke;
-} 
+}
 
 .container-fluid {
   width: 100%;
   border: 5px solid #636568a6;
   background-color: #636568;
-  padding: 20px;  
+  padding: 20px;
   margin-right: auto;
   margin-left: auto;
-  text-align: center!important;
+  text-align: center !important;
 }
 
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
   max-height: 800px;
   position: relative;
-  margin: auto;
-  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   object-fit: scale-down;
+  justify-content: center;
+  justify-self: center;
 }
 
 /* Hide the images by default */
@@ -225,7 +237,8 @@ html {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -247,7 +260,8 @@ html {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgb(204, 173, 0);
 }
 
@@ -283,7 +297,8 @@ html {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -297,47 +312,66 @@ html {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 .color-text {
   color: whitesmoke;
-  font-size: 20px;
-  float: right;
-  width: 700px;
-  vertical-align:middle;
-}
-.helmet {
-  align-self: center; 
-  width: 35%; 
-  height: 35%; 
-  margin: auto; 
-  display: block;
-  filter: drop-shadow(0 10mm 4mm black );
+  font-size: 1.5vw;
+  width: 50%;
+  padding-left: 4vw;
 }
 
-.unis { 
-  align-self: center; 
-  width: 75%; 
-  height: 75%; 
-  margin: auto; 
+.helmet {
+  align-self: center;
+  width: 35%;
+  height: 35%;
+  margin: auto;
   display: block;
-  filter: drop-shadow(0 6mm 2mm black );
+  filter: drop-shadow(0 10mm 4mm black);
+}
+
+.unis {
+  align-self: center;
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  display: block;
+  filter: drop-shadow(0 6mm 2mm black);
 }
 
 .table {
   width: 100%;
   margin-bottom: 1rem;
   color: whitesmoke !important;
+  overflow-x: auto;
+  border-collapse: collapse;
 }
 
-.table tbody tr:hover td, .table tbody tr:hover th {
+@media screen and (max-width: 950px) {
+  .table {
+    display: block;
+  }
+}
+
+.table tbody tr:hover td,
+.table tbody tr:hover th {
   background-color: grey !important;
 }
 
@@ -363,7 +397,8 @@ html {
   width: 300px;
   text-align: center;
   margin: 2px;
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   margin-top: 80px;
 }
 
@@ -377,8 +412,9 @@ html {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+  background-color: whitesmoke;
   cursor: pointer;
+  margin-top: 2vw;
 }
 
 /* Add a light grey background on mouse-over */
@@ -404,7 +440,8 @@ html {
   background-color: transparent;
   width: 300px;
   height: 300px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border: 5px rgb(204, 173, 0);
@@ -427,11 +464,13 @@ html {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
@@ -452,7 +491,7 @@ html {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.541);
-  color:whitesmoke;
+  color: whitesmoke;
   text-decoration: rgb(204, 173, 0);
   text-decoration-style: solid;
   width: 100%;
@@ -462,6 +501,8 @@ html {
 .columna {
   float: left;
   width: 25%;
+  display: flex;
+  margin-left: auto;
 }
 
 .Graduands::after {
@@ -472,6 +513,24 @@ html {
 
 .Graduands {
   padding: 8%;
+}
+
+@media screen and (max-width: 950px) {
+  .columna {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 950px) {
+  .columna {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -486,7 +545,7 @@ html {
   content: '';
   position: absolute;
   width: 6px;
-  background-color:rgb(204, 173, 0);
+  background-color: rgb(204, 173, 0);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -566,4 +625,45 @@ html {
   position: relative;
   border-radius: 6px;
   color: whitesmoke;
+}
+
+@media screen and (max-width: 950px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .timeline-left::after,
+  .timeline-right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .timeline-right {
+    left: 0%;
+  }
+}
+
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 -> 9/16x100 */
+  overflow: hidden;
 }
