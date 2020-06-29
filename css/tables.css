@@ -1,0 +1,28 @@
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: whitesmoke !important;
+    overflow-x: auto;
+    border-collapse: collapse;
+}
+
+@media screen and (max-width: 950px) {
+    .table {
+        display: block;
+    }
+}
+
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+    background-color: grey !important;
+}
+
+.table thead {
+    background-color: rgba(241, 205, 0, 0.637);
+    color: black;
+    font-weight: bold;
+}
+
+.div.dataTables_wrapper div.dataTables_filter label {
+    color: whitesmoke !important;
+}
