@@ -691,3 +691,11 @@ html {
   /* 16:9 -> 9/16x100 */
   overflow: hidden;
 }
+
+.nav-item .dropdown-menu {
+  background-color: #636568a6;
+}
+
+.dropdown-item {
+  color: whitesmoke;
+}
