@@ -1,5 +1,11 @@
+html {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
 body {
     padding-top: 56px;
+    min-height: 100%;
     background-image: url(https://images.hdqwalls.com/wallpapers/dark-black-sand-texture-8k-p8.jpg);
     background-position: center;
     /* Center the image */
@@ -14,10 +20,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-html {
-    box-sizing: border-box;
 }
 
 .portfolio-item {
@@ -40,18 +42,18 @@ html {
 }
 
 .nav-item .dropdown-menu {
-    background-color: #636568a6;
+    background-color: #636568a6 !important;
 }
 
 .dropdown-item {
-    color: whitesmoke;
+    color: whitesmoke !important;
     background-color: transparent;
 }
 
 .nav-item .dropdown-menu:hover,
 .dropdown-item:hover {
-    background-color: #636568d2;
-    color: whitesmoke;
+    background-color: #636568d2 !important;
+    color: whitesmoke !important;
 }
 
 .hero-image {
@@ -112,4 +114,14 @@ html {
 .hero-text a:hover {
     background-color: rgb(0, 0, 0);
     color: white;
+}
+
+.mb-2 {
+    position: relative !important;
+    bottom: 0 !important;
+    width: 100% !important;
+}
+
+.text-white {
+    font-size: 1vw;
 }
