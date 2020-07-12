@@ -66,3 +66,30 @@
         display: block;
     }
 }
+
+.collapsible {
+    background-color: #636568a6;
+    color:  whitesmoke;
+    cursor: pointer;
+    padding: 1vw;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #636568a6;
+  }
+  
+  .collapsiblecontent {
+    padding: 0px 18px;
+    margin-bottom: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #636568a6;
+    text-align: justify;
+  }
