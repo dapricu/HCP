@@ -1,0 +1,33 @@
+.awardname {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2.5rem;
+    box-sizing: inherit;
+    margin: 0.3em;
+    min-height: 100px;
+}
+
+.awardbox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #9ea3ab3f;
+    color: whitesmoke;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-sizing: inherit;
+    min-height: 400px;
+}
+
+.award {
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: gold;
+}
