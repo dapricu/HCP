@@ -31,3 +31,7 @@
     margin-inline-end: 0px;
     color: gold;
 }
+
+.player-name {
+    min-height: 120px;
+}
