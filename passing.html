@@ -194,13 +194,13 @@
     var config = {
       type: 'radar',        // This one does it!
       data: {
-        labels: [['Attempts'], ['Completions'], 'Yards', ['TDs'], 'Avoid Ints', 'Completion%', 'QBRating'],
+        labels: [['Attempts'], ['Completions'], 'Yards', ['TDs'], 'Avoid Ints', 'Completion%', 'YPA', 'QBRating'],
         datasets: [{
           label: 'Gunn',
           borderColor: 'red',
           pointBackgroundColor: 'red',
           pointRadius: 7,
-          data: [100, 100, 100, 93.10, 45.45, 100, 91.73]
+          data: [100, 100, 100, 93.10, 45.45, 100, 92.20, 91.73]
         },
         {
           label: 'Staubach',
@@ -208,7 +208,7 @@
           borderColor: 'yellow',
           pointBackgroundColor: 'yellow',
           pointRadius: 7,
-          data: [90.81, 94.94, 91.38, 94.83, 0, 95.69, 82.97]
+          data: [90.81, 94.94, 91.38, 94.83, 0, 95.69, 88.73, 82.97]
         },
         {
           label: 'Jack',
@@ -216,7 +216,7 @@
           borderColor: 'grey',
           pointBackgroundColor: 'grey',
           pointRadius: 7,
-          data: [80.97, 86.77, 79.76, 100, 15.15, 93.37, 84.46]
+          data: [80.97, 86.77, 79.76, 100, 15.15, 93.37, 84.75, 84.46]
         },
         {
           label: 'Adrienne',
@@ -224,7 +224,7 @@
           borderColor: 'white',
           pointBackgroundColor: 'white',
           pointRadius: 7,
-          data: [51.61, 53.11, 57.61, 62.07, 81.82, 97.19, 100]
+          data: [51.61, 53.11, 57.61, 62.07, 81.82, 97.19, 100, 100]
         }]
       },
       options: {
@@ -242,7 +242,7 @@
         },
         title: {
           display: true,
-          text: 'HCP Passing Chart',
+          text: 'QB Chart',
           fontColor: 'gold',
           fontSize: 25,
           align: 'center',
