@@ -35,7 +35,10 @@
     src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
   <script type="text/javascript" charset="utf8"
     src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script import Chart from 'chart.js';></script>
+  <script import ChartDataLabels from 'chartjs-plugin-datalabels'></script>
 
 </head>
 
@@ -179,23 +182,154 @@
       </tbody>
     </table>
   </div>
+  <br>
 
-  <br><br>
-  <div class="footer">
-    <footer class="p-3 mb-2 bg-dark text-white footer">
+  <div class="chart-container" style="position: relative; margin: auto; height:70vh; width:70vw;">
+<!-- 
+  <script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var scatterChart = new Chart(ctx, {
+    type: 'scatter',
+    data: {
+        labels: ['Gunn', "Staubach", "Jack", "Adrienne"],
+        datasets: [{
+            pointBackgroundColor: ["yellow","yellow","yellow","yellow"],
+            pointRadius: [10, 10, 10,10],
+            pointHitRadius: [10,10,10,10],
+            label: 'Attempts & Completions',
+            data: [{
+                x: 976,
+                y: 563
+            }, {
+                x: 514,
+                y: 310
+            }, {
+                x: 446,
+                y: 251
+            }, {
+                x: 273,
+                y: 160
+            }]
+        }]
+    },
+    options: {
+        plugins: {
+          datalabels: {
+            color: '#FFFF00',
+            align: 'top'
+          }
+        },
+        maintainAspectRatio: false,
+        responsive: true,
+        scales: {
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom'
+            }]
+        }
+      }
+});</script> -->
+<canvas id="canvas" style="display: block;" class="chartjs-render-monitor"></canvas>
+</div>
+
+<script>
+var color = "yellow";
+var config = {
+  type: 'radar',        // This one does it!
+  data: {
+    labels: [['Attempts'], ['Completions'], 'Yards', ['TDs'], 'Avoid Ints', 'Completion%', 'QBRating'],
+    datasets: [{
+      label: 'Gunn',
+      borderColor: 'red',
+      pointBackgroundColor: 'red',
+      pointRadius: 7,
+      data: [100,100,100,93.10,45.45,100,91.73]
+    },
+    {
+      label: 'Staubach',
+      // backgroundColor: '#ef1d1c',
+      borderColor: 'yellow',
+      pointBackgroundColor: 'yellow',
+      pointRadius: 7,
+      data: [90.81,94.94,91.38,94.83,0,95.69,82.97]
+    },
+    {
+      label: 'Jack',
+      // backgroundColor: '#ef1d1c',
+      borderColor: 'grey',
+      pointBackgroundColor: 'grey',
+      pointRadius: 7,
+      data: [80.97,86.77,79.76,100,15.15,93.37,84.46]
+    },
+    {
+      label: 'Adrienne',
+      // backgroundColor: '#ef1d1c',
+      borderColor: 'white',
+      pointBackgroundColor: 'white',
+      pointRadius: 7,
+      data: [51.61,53.11,57.61,62.07,81.82,97.19,100]
+    }]
+  },
+  options: {
+    maintainAspectRatio: false,
+    plugins: {
+      datalabels: {
+        display: false
+      }
+    },
+    legend: {
+      labels: {
+        fontColor: 'gold',
+      },
+      position: 'bottom',
+    },
+    title: {
+      display: true,
+      text: 'HCP Passing Chart',
+      fontColor: 'gold',
+      fontSize: 25,
+      align: 'center',
+      padding: 10,
+    },
+    scale: {
+      gridLines: {
+        color: 'gold',
+      },
+      ticks: {
+        beginAtZero: true,
+        stepSize: 25,
+        fontColor: 'gold',
+        display: true,
+        color: 'gold',
+        showLabelBackdrop: false
+      },
+      pointLabels: {
+        fontColor: 'gold',
+        fontSize: 14},
+      angleLines: {
+        color: 'gold',
+        fontColor: 'gold',
+        display: false,
+      }
+    }
+  }
+}
+
+window.onload = function() {
+  window.myRadar = new Chart(document.getElementById('canvas'), config);
+};
+</script>
+
+<br><br><br>
+
+<div class="footer">
+  <footer class="p-3 mb-2 bg-dark text-white footer">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Elite Football League - Shark 2020</p>
+          <p class="m-0 text-center text-white">Copyright &copy; Elite Football League - Shark 2020</p>
       </div>
       <!-- /.container -->
-    </footer>
-  </div>
-
-
-  <script>$(document).ready(function () {
-      $('#example').DataTable({
-        "paging": false,
-      });
-    });</script>
+  </footer>
+</div>
 
 </body>
 
